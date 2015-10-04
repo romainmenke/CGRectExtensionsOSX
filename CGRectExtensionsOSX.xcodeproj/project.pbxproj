@@ -10,6 +10,9 @@
 		05226C9B1BC0DB5B0039B6DE /* CGRectExtensionsOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 05226C9A1BC0DB5B0039B6DE /* CGRectExtensionsOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05226CA21BC0DB5B0039B6DE /* CGRectExtensionsOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05226C971BC0DB5B0039B6DE /* CGRectExtensionsOSX.framework */; };
 		05226CA71BC0DB5B0039B6DE /* CGRectExtensionsOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CA61BC0DB5B0039B6DE /* CGRectExtensionsOSXTests.swift */; };
+		05226CDA1BC0DD5C0039B6DE /* Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CD91BC0DD5C0039B6DE /* Expand.swift */; };
+		05226CDE1BC17C870039B6DE /* NSViewContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CDD1BC17C870039B6DE /* NSViewContentMode.swift */; };
+		05226CE51BC17EAE0039B6DE /* ContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CE41BC17EAE0039B6DE /* ContentMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,10 @@
 		05226CA11BC0DB5B0039B6DE /* CGRectExtensionsOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGRectExtensionsOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05226CA61BC0DB5B0039B6DE /* CGRectExtensionsOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensionsOSXTests.swift; sourceTree = "<group>"; };
 		05226CA81BC0DB5B0039B6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05226CD91BC0DD5C0039B6DE /* Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Expand.swift; path = Transformations/Expand.swift; sourceTree = "<group>"; };
+		05226CDB1BC17A8F0039B6DE /* FittAndFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FittAndFill.swift; path = Transformations/FittAndFill.swift; sourceTree = "<group>"; };
+		05226CDD1BC17C870039B6DE /* NSViewContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewContentMode.swift; path = Enums/NSViewContentMode.swift; sourceTree = "<group>"; };
+		05226CE41BC17EAE0039B6DE /* ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentMode.swift; path = NSView/ContentMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,9 @@
 		05226C991BC0DB5B0039B6DE /* CGRectExtensionsOSX */ = {
 			isa = PBXGroup;
 			children = (
+				05226CE21BC17E660039B6DE /* CGSizeExtensions */,
+				05226CE11BC17E530039B6DE /* CGRectExtensions */,
+				05226CE01BC17E440039B6DE /* NSViewExtensions */,
 				05226C9A1BC0DB5B0039B6DE /* CGRectExtensionsOSX.h */,
 				05226C9C1BC0DB5B0039B6DE /* Info.plist */,
 			);
@@ -84,6 +94,55 @@
 				05226CA81BC0DB5B0039B6DE /* Info.plist */,
 			);
 			path = CGRectExtensionsOSXTests;
+			sourceTree = "<group>";
+		};
+		05226CD71BC0DBD60039B6DE /* Transformations */ = {
+			isa = PBXGroup;
+			children = (
+				05226CD91BC0DD5C0039B6DE /* Expand.swift */,
+				05226CDB1BC17A8F0039B6DE /* FittAndFill.swift */,
+			);
+			name = Transformations;
+			sourceTree = "<group>";
+		};
+		05226CDF1BC17D740039B6DE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				05226CDD1BC17C870039B6DE /* NSViewContentMode.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		05226CE01BC17E440039B6DE /* NSViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				05226CE31BC17E910039B6DE /* ContentMode */,
+				05226CDF1BC17D740039B6DE /* Enums */,
+			);
+			name = NSViewExtensions;
+			sourceTree = "<group>";
+		};
+		05226CE11BC17E530039B6DE /* CGRectExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				05226CD71BC0DBD60039B6DE /* Transformations */,
+			);
+			name = CGRectExtensions;
+			sourceTree = "<group>";
+		};
+		05226CE21BC17E660039B6DE /* CGSizeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CGSizeExtensions;
+			sourceTree = "<group>";
+		};
+		05226CE31BC17E910039B6DE /* ContentMode */ = {
+			isa = PBXGroup;
+			children = (
+				05226CE41BC17EAE0039B6DE /* ContentMode.swift */,
+			);
+			name = ContentMode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05226CE51BC17EAE0039B6DE /* ContentMode.swift in Sources */,
+				05226CDA1BC0DD5C0039B6DE /* Expand.swift in Sources */,
+				05226CDE1BC17C870039B6DE /* NSViewContentMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +366,7 @@
 		05226CAC1BC0DB5B0039B6DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -316,12 +379,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.menke-dev.CGRectExtensionsOSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		05226CAD1BC0DB5B0039B6DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
