@@ -27,7 +27,7 @@ public enum NSViewContentMode : Int {
 
 
 /*
-switch contentMode {
+switch NSViewContentMode {
     
 case .ScaleToFill:
 case .ScaleAspectFit:

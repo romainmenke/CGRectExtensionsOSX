@@ -15,6 +15,8 @@
 		05226CE51BC17EAE0039B6DE /* ContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CE41BC17EAE0039B6DE /* ContentMode.swift */; };
 		05226CE81BC18EE70039B6DE /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CE71BC18EE70039B6DE /* Circular.swift */; };
 		05226CEB1BC192EC0039B6DE /* CGRectUnionForSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CEA1BC192EC0039B6DE /* CGRectUnionForSubviews.swift */; };
+		05226CF01BC1A73B0039B6DE /* LayoutSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */; };
+		05226CF21BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CF11BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		05226CE41BC17EAE0039B6DE /* ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentMode.swift; path = NSView/ContentMode.swift; sourceTree = "<group>"; };
 		05226CE71BC18EE70039B6DE /* Circular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circular.swift; path = Calculations/Circular.swift; sourceTree = "<group>"; };
 		05226CEA1BC192EC0039B6DE /* CGRectUnionForSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRectUnionForSubviews.swift; path = NSView/CGRectUnionForSubviews.swift; sourceTree = "<group>"; };
+		05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutSubviews.swift; path = NSView/LayoutSubviews.swift; sourceTree = "<group>"; };
+		05226CF11BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewLayoutForSubviews.swift; path = Enums/NSViewLayoutForSubviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				05226CDD1BC17C870039B6DE /* NSViewContentMode.swift */,
+				05226CF11BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 		05226CE01BC17E440039B6DE /* NSViewExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				05226CEE1BC1A72A0039B6DE /* Layout */,
 				05226CE91BC192C80039B6DE /* CGRectUnionForSubviews */,
 				05226CE31BC17E910039B6DE /* ContentMode */,
 				05226CDF1BC17D740039B6DE /* Enums */,
@@ -165,6 +171,14 @@
 				05226CEA1BC192EC0039B6DE /* CGRectUnionForSubviews.swift */,
 			);
 			name = CGRectUnionForSubviews;
+			sourceTree = "<group>";
+		};
+		05226CEE1BC1A72A0039B6DE /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05226CF21BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift in Sources */,
 				05226CEB1BC192EC0039B6DE /* CGRectUnionForSubviews.swift in Sources */,
 				05226CE51BC17EAE0039B6DE /* ContentMode.swift in Sources */,
 				05226CDA1BC0DD5C0039B6DE /* Expand.swift in Sources */,
+				05226CF01BC1A73B0039B6DE /* LayoutSubviews.swift in Sources */,
 				05226CE81BC18EE70039B6DE /* Circular.swift in Sources */,
 				05226CDE1BC17C870039B6DE /* NSViewContentMode.swift in Sources */,
 			);

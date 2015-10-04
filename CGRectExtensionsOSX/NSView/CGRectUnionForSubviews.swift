@@ -10,12 +10,12 @@ import Foundation
 import Cocoa
 
 
-public protocol SubviewsCGRectUnion {
+public protocol CGRectUnionWithSubviews {
     var frame : CGRect { get set }
     var subviews : [NSView] { get }
 }
 
-extension SubviewsCGRectUnion {
+public extension CGRectUnionWithSubviews {
     
     public mutating func setCGRectUnionWithSubviews() {
         frame = getCGRectUnionWithNestedSubviews(subviews: subviews, frame: frame)
@@ -44,5 +44,5 @@ extension SubviewsCGRectUnion {
     }
 }
 
-extension NSView : SubviewsCGRectUnion {
+extension NSView : CGRectUnionWithSubviews {
 }
