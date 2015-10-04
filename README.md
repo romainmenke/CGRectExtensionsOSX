@@ -1,6 +1,7 @@
 # CGRectExtensionsOSX
 An Ode to CGRect
 
-- NSViewContentMode
-- CGRect expand
+- NSViewContentMode -> add a subview with UIViewContentMode-style placing
+- CGRect expand -> expand CGRect anchored in the center
 - rotationBounds -> get a CGRect that illustrates the space rotations might take in.
+- CGRectUnionWithSubviews -> get CGRectUnion for all nested subviews.
