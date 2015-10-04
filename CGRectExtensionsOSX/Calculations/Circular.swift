@@ -16,13 +16,17 @@ public protocol CGRectCircularCalc {
     
     var origin : CGPoint { get set }
     var size : CGSize { get set }
-    func rotationBounds() -> CGRect
+    var rotationBounds : CGRect { get }
     
 }
 
 public extension CGRectCircularCalc {
     
-    public func rotationBounds() -> CGRect {
+    var rotationBounds : CGRect {
+        return getRotationBounds()
+    }
+    
+    private func getRotationBounds() -> CGRect {
         
         let diagonal = sqrt(pow(size.width, 2) + pow(size.height, 2))
         
