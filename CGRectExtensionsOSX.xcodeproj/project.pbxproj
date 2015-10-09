@@ -17,6 +17,9 @@
 		05226CEB1BC192EC0039B6DE /* CGRectUnionForSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CEA1BC192EC0039B6DE /* CGRectUnionForSubviews.swift */; };
 		05226CF01BC1A73B0039B6DE /* LayoutSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */; };
 		05226CF21BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05226CF11BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift */; };
+		053A9B431BC8318400D4EA08 /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A9B421BC8318400D4EA08 /* Overlap.swift */; settings = {ASSET_TAGS = (); }; };
+		053A9B481BC831E600D4EA08 /* AreaAndAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A9B471BC831E600D4EA08 /* AreaAndAspectRatio.swift */; settings = {ASSET_TAGS = (); }; };
+		053A9B4C1BC8327300D4EA08 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A9B4B1BC8327300D4EA08 /* Center.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		05226CEA1BC192EC0039B6DE /* CGRectUnionForSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRectUnionForSubviews.swift; path = NSView/CGRectUnionForSubviews.swift; sourceTree = "<group>"; };
 		05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutSubviews.swift; path = NSView/LayoutSubviews.swift; sourceTree = "<group>"; };
 		05226CF11BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewLayoutForSubviews.swift; path = Enums/NSViewLayoutForSubviews.swift; sourceTree = "<group>"; };
+		053A9B421BC8318400D4EA08 /* Overlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Overlap.swift; path = Overloading/Overlap.swift; sourceTree = "<group>"; };
+		053A9B471BC831E600D4EA08 /* AreaAndAspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AreaAndAspectRatio.swift; path = Constants/AreaAndAspectRatio.swift; sourceTree = "<group>"; };
+		053A9B4B1BC8327300D4EA08 /* Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Center.swift; path = Constants/Center.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,8 @@
 		05226CE11BC17E530039B6DE /* CGRectExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				053A9B441BC831B200D4EA08 /* Constants */,
+				053A9B411BC8316C00D4EA08 /* Overloading */,
 				05226CE61BC18EC90039B6DE /* Calculations */,
 				05226CD71BC0DBD60039B6DE /* Transformations */,
 			);
@@ -179,6 +187,23 @@
 				05226CEF1BC1A73B0039B6DE /* LayoutSubviews.swift */,
 			);
 			name = Layout;
+			sourceTree = "<group>";
+		};
+		053A9B411BC8316C00D4EA08 /* Overloading */ = {
+			isa = PBXGroup;
+			children = (
+				053A9B421BC8318400D4EA08 /* Overlap.swift */,
+			);
+			name = Overloading;
+			sourceTree = "<group>";
+		};
+		053A9B441BC831B200D4EA08 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				053A9B471BC831E600D4EA08 /* AreaAndAspectRatio.swift */,
+				053A9B4B1BC8327300D4EA08 /* Center.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053A9B4C1BC8327300D4EA08 /* Center.swift in Sources */,
 				05226CF21BC1A78B0039B6DE /* NSViewLayoutForSubviews.swift in Sources */,
+				053A9B481BC831E600D4EA08 /* AreaAndAspectRatio.swift in Sources */,
+				053A9B431BC8318400D4EA08 /* Overlap.swift in Sources */,
 				05226CEB1BC192EC0039B6DE /* CGRectUnionForSubviews.swift in Sources */,
 				05226CE51BC17EAE0039B6DE /* ContentMode.swift in Sources */,
 				05226CDA1BC0DD5C0039B6DE /* Expand.swift in Sources */,
@@ -483,6 +511,7 @@
 				05226CAD1BC0DB5B0039B6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05226CAE1BC0DB5B0039B6DE /* Build configuration list for PBXNativeTarget "CGRectExtensionsOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +520,7 @@
 				05226CB01BC0DB5B0039B6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
